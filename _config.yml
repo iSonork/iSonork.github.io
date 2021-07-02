@@ -1,7 +1,7 @@
 theme: jekyll-theme-slate
 title: iSonork's Projects
 logo: /Potato Piece.png
-description: Description of the site # Displays as site description meta tag for site
+description: Potato Piece https # Displays as site description meta tag for site
 copyright: 2021 iSonork, Inc. # appears in footer
 breadcrumb_home_name: Home # display name for "Home" path in the breadcrumb
 tableofcontents: Table of Contents # text that appears before in-page table of contents
