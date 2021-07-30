@@ -1,35 +1,11 @@
 <!---https://pastebin.com/raw/kd2ewCXt--->
-<html>
 <title>PPgetAssets</title>
+<div id="youtube-video"><!-- --></div>
 
-
-<p>
-      <%
-        options = '?'
-        #options += '&autoplay=1' # 1: Inicia automatico ao carregar a pagina; 2: normal
-        #options += '&controls=0' # 0: Esconde os controles de opção; 1: Mostra; 2: mostra, mas o flash player inicia depois do play
-        #options += '&autohide=1' # 2(default): Esconde os controles apos um tempo; 1: Assim que iniciar; 0: Sempre visível
-        options += '&showinfo=0' # Esconde o cabeçalho
-        options += '&rel=0' # 0: Remover videos relacionados; 1(default): exibe
-        options += '&theme=light' # Tema light ou dark
-        options += '&modestbranding=1' # 1: Oculta o botão para ver no Youtube; 0(default): exibe.
-        #options += '&color=white' # (Desativa modestbranding) white: Cor da linha branca; red: vermelha 
-        options += '&cc_load_policy=1' # 0: Legendas, padrão do usuário; 1: Mostra as legendas
-        #options += '&disablekb=1' # 1: Habilita teclas de atalho; 0(default): desabilita.
-        #options += '&enablejsapi=1' # 1: Habilita Javascript API; 0(defaul): desabilita
-        #options += '&start=' # Número: informa em qual momento (em um determinado segundo) o video deve iniciar.
-        #options += '&end=' # Número: informa em qual momento (em um determinado segundo) o video deve parar.
-        #options += '&fs=0' # 0: Desabilita o botão FullScreen; 1(default) habilita.
-        options += '&iv_load_policy=3' # 3: Desabilita a exibição das anotações do video; 1(default) habilita
-   #    # listType usado em conjunto com list e carrega uma lista de videos
-   #    # '&list=parametro' # uma pesquisa; id do usuario do qual serão carregados os videos; id da playlist que será carregada.
-   #    # Ex: &listType=playlist&list=PLC77007E23FF423C6
-        #options += '&loop=1' # 1: o video sera repetido indefinidamente; 0(default): o video so e apresentado uma vez
-        #options += '&rel=0&color1=0x006699&color2=0x54abd6&border=0'
-        movie = '//www.youtube-nocookie.com/embed/JfeeGblHdlg'
-        width='640'
-        height='360'
-      %>
-      <iframe width="<%= width %>" height="<%= height %>" src="<%= movie %><%= options %>" frameborder="0"></iframe>
-    </p>
-</html>
+<script>
+$("#youtube-video").pPlayer({
+    youtubeVideoId: "YE7VzlLtp-4",
+    autoplay: 0,
+    origin: "http://yoursite.com"
+});
+</script>
